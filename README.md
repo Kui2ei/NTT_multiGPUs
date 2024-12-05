@@ -42,4 +42,4 @@ nvcc -O3 -arch=sm_XX main.cu ./ntt/ntt.cu  ./init/init.cu ./init/fr.cu ./init/tw
 
 ​	And, the running time of 4-way NTT where the input size of every NTT reaches $2^{28}$ is 430~440ms.
 
-## The work of this article was mainly completed by Gao Peimin
+## This work was mainly completed by Gao Peimin.
