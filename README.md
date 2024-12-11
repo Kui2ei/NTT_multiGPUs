@@ -25,14 +25,14 @@ nvcc -O3 -arch=sm_XX main.cu ./ntt/ntt.cu  ./init/init.cu ./init/fr.cu ./init/tw
 
 ### Parameter choices
 
-- [ ] ./parameter/parameter.cuh   :     Define the parameters on CPU
+- [ ] ./parameter/parameter.cuh  :    Define the parameters on CPU
 - [ ] ./parameter/parameter_g.cuh:    Define the parameters on GPU
 
 ### Tests
 
-​	This code runs on BN254 curve, and the big integer implementation is on the basis of yrrid's implementation in ZPrize2022. And the ntt.py is to validate the correctness of this project.
+This code runs on BN254 curve, and the big integer implementation is on the basis of yrrid's implementation in ZPrize2022. And the ntt.py is to validate the correctness of this project.
 
-​	The hardware configuration is 8 x 4090 24GB. CUDA Version: 12.3, GCC Version: 11.4.0
+The hardware configuration is 8 x 4090 24GB. CUDA Version: 12.3, GCC Version: 11.4.0
 
 |        | $2^{22}$ | $2^{24}$ | $2^{26}$ | $2^{28}$ |
 | ------ | -------- | -------- | -------- | -------- |
